@@ -1,0 +1,1866 @@
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPGRADED HIGH SCHOOL SIKTIA | उत्क्रमित उच्च माध्यमिक विद्यालय, सिकटिया</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Inter & Noto Sans Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0b2b4f',
+              blue: '#16528e',
+              lightBlue: '#e8f2fc',
+              green: '#107c41',
+              lightGreen: '#e6f4ea',
+              accent: '#f59e0b',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Devanagari', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+    }
+    .hero-pattern {
+      background-color: #0b2b4f;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 4px;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .animate-marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 26s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-blue selection:text-white">
+
+  <!-- Top Announcement Bar / Notification Ticker -->
+  <div class="bg-brand-navy text-white text-xs md:text-sm py-2 px-4 border-b border-blue-900/50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+      <div class="flex items-center space-x-3 w-full md:w-auto overflow-hidden">
+        <span class="bg-brand-green text-white font-bold text-xs px-2.5 py-0.5 rounded-full flex items-center shrink-0 uppercase tracking-wide">
+          <i class="fa-solid fa-bullhorn mr-1.5 animate-pulse"></i> Notice
+        </span>
+        <div class="overflow-hidden relative w-full md:w-[600px] text-slate-200">
+          <div class="animate-marquee cursor-pointer font-medium" onclick="scrollToSection('notices')">
+            📢 Admission Open for Class 9th & 11th (Arts, Science, Commerce) 2025-26 | Annual Sports Meet scheduled next week | ICT Lab Smart Attendance Active | 
+            <span class="text-yellow-300 font-semibold">प्रधानाध्यापक: श्री जितेंद्र कुमार पटेल द्वारा विशेष संदेश जारी</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4 shrink-0 text-slate-300 text-xs">
+        <span class="hidden sm:inline"><i class="fa-solid fa-phone mr-1 text-emerald-400"></i> +91 9431X XXXXX</span>
+        <span><i class="fa-solid fa-envelope mr-1 text-emerald-400"></i> info@uhssiktia.edu.in</span>
+        <button onclick="openAdminModal()" class="bg-white/10 hover:bg-white/20 text-white px-2.5 py-1 rounded transition text-xs flex items-center font-medium">
+          <i class="fa-solid fa-lock mr-1.5 text-yellow-300"></i> Portal Login
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main School Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-3">
+        <!-- Logo & School Brand -->
+        <a href="#home" class="flex items-center space-x-3 md:space-x-4 group">
+          <div class="relative w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-tr from-brand-navy via-brand-blue to-emerald-600 flex items-center justify-center p-1 shadow-md shadow-brand-navy/15 group-hover:scale-105 transition-transform duration-300">
+            <!-- Simulated Crest Emblem -->
+            <div class="w-full h-full bg-white rounded-xl flex flex-col items-center justify-center text-center p-1 border-2 border-amber-400">
+              <i class="fa-solid fa-graduation-cap text-brand-blue text-xl md:text-2xl"></i>
+              <span class="text-[9px] font-extrabold text-brand-green leading-none uppercase mt-0.5 tracking-tighter">UHS SIKTIA</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 uppercase tracking-wider">Govt. Recognized High School</span>
+              <span class="text-xs text-slate-400 font-mono hidden sm:inline">UDISE: 10020304001</span>
+            </div>
+            <h1 class="text-lg md:text-2xl font-black text-brand-navy tracking-tight leading-snug">
+              UPGRADED HIGH SCHOOL SIKTIA
+            </h1>
+            <p class="text-xs md:text-sm font-semibold text-slate-600">
+              उत्क्रमित उच्च माध्यमिक विद्यालय, सिकटिया
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center space-x-1 font-medium text-sm text-slate-700">
+          <a href="#home" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 font-semibold transition">Home</a>
+          <a href="#about" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">About</a>
+          <a href="#academics" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Academics</a>
+          <a href="#teachers" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Teachers</a>
+          <a href="#notices" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Notices</a>
+          <a href="#gallery" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Gallery</a>
+          <a href="#ict-lab" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center">
+            <span class="relative flex h-2 w-2 mr-1.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            ICT Lab
+          </a>
+          <a href="#downloads" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Downloads</a>
+          <a href="#contact" class="px-3 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Contact</a>
+          <a href="#contact" class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-xs font-bold text-white bg-brand-green hover:bg-emerald-700 transition">
+            <i class="fa-solid fa-paper-plane mr-1.5"></i> Admissions
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex items-center space-x-2 xl:hidden">
+          <button onclick="toggleMobileMenu()" class="p-2.5 rounded-lg text-slate-700 hover:text-brand-blue hover:bg-slate-100 focus:outline-none" aria-label="Open menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-5 space-y-1 shadow-xl">
+      <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-semibold text-slate-800 hover:bg-brand-lightBlue hover:text-brand-blue">Home</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-lightBlue hover:text-brand-blue">About School</a>
+      <a href="#academics" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-lightBlue hover:text-brand-blue">Academics (9th - 12th)</a>
+      <a href="#teachers" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-lightBlue hover:text-brand-blue">Teachers & Staff</a>
+      <a href="#notices" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-lightBlue hover:text-brand-blue">Notice Board</a>
+      <a href="#gallery" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-lightBlue hover:text-brand-blue">Photo Gallery</a>
+      <a href="#ict-lab" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-emerald-700 font-bold bg-emerald-50">ICT Smart Lab</a>
+      <a href="#downloads" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-lightBlue hover:text-brand-blue">Downloads & PDFs</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-lightBlue hover:text-brand-blue">Contact Us</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <button onclick="openAdminModal(); toggleMobileMenu();" class="w-full text-center py-2.5 rounded-lg font-bold text-white bg-brand-navy hover:bg-slate-900 transition flex items-center justify-center">
+          <i class="fa-solid fa-lock mr-2 text-amber-400"></i> Staff Admin Portal
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative hero-pattern text-white overflow-hidden py-16 lg:py-24">
+    <!-- Decorative background elements -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-green/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-blue/40 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-xs sm:text-sm text-emerald-300 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Empowering Rural & Semi-Urban Minds Since Inception</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
+            Shaping Bright Futures Through Quality & Digital Education
+          </h1>
+          
+          <p class="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Welcome to <strong class="text-white font-semibold">UPGRADED HIGH SCHOOL SIKTIA (UHS SIKTIA)</strong>. Dedicated to providing holistic education, modern digital ICT facilities, and academic excellence for students of Class 9, 10, 11, and 12 across Science, Arts, and Commerce.
+          </p>
+
+          <div class="p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/15 inline-block text-left">
+            <p class="text-xs uppercase tracking-wider text-amber-300 font-bold mb-1">
+              <i class="fa-solid fa-user-tie mr-1"></i> School Leadership
+            </p>
+            <p class="text-base sm:text-lg font-bold text-white">
+              प्रधानाध्यापक: <span class="text-emerald-300">श्री जितेंद्र कुमार पटेल</span>
+            </p>
+            <p class="text-xs text-slate-300">Headmaster, Upgraded High School Siktia</p>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+            <a href="#academics" class="px-6 py-3.5 bg-brand-green hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-900/30 transition transform hover:-translate-y-0.5 flex items-center">
+              <i class="fa-solid fa-book-open-reader mr-2"></i> Explore Academics
+            </a>
+            <a href="#notices" class="px-6 py-3.5 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-xl backdrop-blur-sm border border-white/20 transition flex items-center">
+              <i class="fa-solid fa-bell mr-2 text-yellow-300"></i> Latest Notices
+            </a>
+            <a href="#ict-lab" class="px-5 py-3.5 bg-brand-blue/60 hover:bg-brand-blue text-white font-semibold rounded-xl border border-blue-400/30 transition flex items-center">
+              <i class="fa-solid fa-laptop-code mr-2 text-cyan-300"></i> Virtual ICT Lab
+            </a>
+          </div>
+
+          <!-- Quick Stats Banner -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/15">
+            <div class="text-center lg:text-left">
+              <p class="text-2xl sm:text-3xl font-black text-amber-300">1200+</p>
+              <p class="text-xs text-slate-300">Enrolled Students</p>
+            </div>
+            <div class="text-center lg:text-left">
+              <p class="text-2xl sm:text-3xl font-black text-emerald-400">100%</p>
+              <p class="text-xs text-slate-300">Dedicated Staff</p>
+            </div>
+            <div class="text-center lg:text-left">
+              <p class="text-2xl sm:text-3xl font-black text-cyan-300">20+ PCs</p>
+              <p class="text-xs text-slate-300">Modern ICT Lab</p>
+            </div>
+            <div class="text-center lg:text-left">
+              <p class="text-2xl sm:text-3xl font-black text-white">9th - 12th</p>
+              <p class="text-xs text-slate-300">Complete Streams</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Media / Image Showcase -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 aspect-[4/3] bg-slate-800">
+              <img 
+                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=80" 
+                alt="School Building UHS Siktia" 
+                class="w-full h-full object-cover transform hover:scale-105 transition duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="inline-block bg-brand-green text-xs font-bold px-2 py-0.5 rounded text-white mb-1">Campus Life</span>
+                <h4 class="font-bold text-base md:text-lg">Upgraded High School Campus, Siktia</h4>
+                <p class="text-xs text-slate-300">Spacious premises, green playground & interactive smart classrooms</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge Card -->
+            <div class="absolute -bottom-6 -right-4 sm:-right-6 bg-white text-slate-800 p-4 rounded-xl shadow-xl border border-slate-100 max-w-xs flex items-center space-x-3.5">
+              <div class="w-12 h-12 rounded-lg bg-emerald-100 text-brand-green flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-award text-2xl"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-wide">Accredited</p>
+                <p class="text-xs font-extrabold text-brand-navy">Excellence in Board Results & Sports</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADMASTER / PRINCIPAL MESSAGE SECTION -->
+  <section class="py-14 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-brand-lightBlue/50 via-white to-emerald-50/50 rounded-3xl border border-slate-200 p-6 md:p-10 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <div class="md:col-span-4 flex flex-col items-center text-center">
+            <div class="relative w-44 h-44 sm:w-52 sm:h-52 rounded-2xl overflow-hidden border-4 border-brand-blue shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" 
+                alt="Headmaster Shri Jitendra Kumar Patel" 
+                class="w-full h-full object-cover object-top"
+              />
+              <div class="absolute bottom-0 inset-x-0 bg-brand-navy/90 text-white text-[11px] py-1 font-semibold">
+                प्रधानाध्यापक (Headmaster)
+              </div>
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-brand-navy">श्री जितेंद्र कुमार पटेल</h3>
+            <p class="text-xs font-semibold text-emerald-700 tracking-wide uppercase">M.Sc., B.Ed. | Headmaster</p>
+            <p class="text-xs text-slate-500 mt-1">UHS Siktia</p>
+          </div>
+
+          <div class="md:col-span-8 space-y-4">
+            <div class="inline-flex items-center space-x-2 text-xs font-bold text-brand-blue uppercase tracking-widest bg-blue-100/70 px-3 py-1 rounded-full">
+              <i class="fa-solid fa-quote-left"></i> Principal's Desk | प्रधानाध्यापक का संदेश
+            </div>
+            
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug">
+              "विद्या ददाति विनयं" - Nurturing Character, Intellect and Technological Readiness
+            </h2>
+
+            <div class="text-slate-600 text-sm md:text-base leading-relaxed space-y-3 font-normal">
+              <p>
+                <strong>प्रिय अभिभावकों, विद्यार्थियों एवं शुभचिंतकों,</strong><br>
+                उत्क्रमित उच्च माध्यमिक विद्यालय, सिकटिया (UHS SIKTIA) में आप सभी का हार्दिक स्वागत है। हमारा संकल्प है कि ग्रामीण एवं विकासशील क्षेत्रों के छात्र-छात्राओं को आधुनिकतम तकनीकी शिक्षा, नैतिक मूल्य और उत्कृष्ट शैक्षणिक वातावरण सुलभ हो। 
+              </p>
+              <p>
+                With the advent of our dedicated <strong>ICT Lab and Digital Classrooms</strong>, along with specialized teaching for <strong>Classes 9th through 12th in Science, Arts, and Commerce streams</strong>, we are committed to building a strong foundation. Every child possesses unique potential, and our competent faculty strives tirelessly to cultivate it.
+              </p>
+            </div>
+
+            <div class="pt-2 flex flex-wrap items-center gap-6 text-xs text-slate-500 font-semibold border-t border-slate-200">
+              <div class="flex items-center text-slate-700">
+                <i class="fa-solid fa-calendar-check text-brand-green mr-2 text-sm"></i> Office Hours: 9:00 AM - 4:00 PM
+              </div>
+              <div class="flex items-center text-slate-700">
+                <i class="fa-solid fa-shield-halved text-brand-blue mr-2 text-sm"></i> Transparent Administration
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SCHOOL SECTION -->
+  <section id="about" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-brand-green uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">About UHS Siktia</span>
+        <h2 class="text-3xl font-black text-brand-navy mt-2 sm:text-4xl">Excellence in Rural & Higher Secondary Education</h2>
+        <p class="text-slate-600 text-sm mt-3">An institution committed to bridging the digital and educational divide by offering holistic facilities and high standards of learning.</p>
+      </div>
+
+      <!-- Vision & Mission Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-brand-blue text-xl mb-4">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy mb-2">Our Vision (हमारा दृष्टिकोण)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            To evolve into an exemplary educational hub that nurtures self-reliant, morally upright, and academically competent citizens equipped for future challenges.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-brand-green text-xl mb-4">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy mb-2">Our Mission (हमारा लक्ष्य)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Provide accessible, affordable, and quality secondary & higher secondary education with hands-on computer training, scientific inquiry, and sports culture.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-xl mb-4">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy mb-2">Achievements (उपलब्धियां)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Consistently superior matriculation and intermediate results, inter-district sports championship trophies, and active participation in state-level science fairs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Basic School Info Cards / Facilities -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+        <h3 class="text-xl font-bold text-brand-navy mb-6 flex items-center">
+          <i class="fa-solid fa-school text-brand-blue mr-2.5"></i> Key Infrastructure & Facilities
+        </h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-blue-50 transition">
+            <i class="fa-solid fa-desktop text-2xl text-brand-blue mb-2"></i>
+            <h4 class="text-xs font-bold text-slate-800">Hi-Tech ICT Lab</h4>
+            <p class="text-[11px] text-slate-500">20+ Networked PCs</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-emerald-50 transition">
+            <i class="fa-solid fa-flask-vial text-2xl text-emerald-600 mb-2"></i>
+            <h4 class="text-xs font-bold text-slate-800">Science Lab</h4>
+            <p class="text-[11px] text-slate-500">Physics, Chem, Bio</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-amber-50 transition">
+            <i class="fa-solid fa-book text-2xl text-amber-600 mb-2"></i>
+            <h4 class="text-xs font-bold text-slate-800">School Library</h4>
+            <p class="text-[11px] text-slate-500">3000+ Books & Journals</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-cyan-50 transition">
+            <i class="fa-solid fa-futbol text-2xl text-cyan-600 mb-2"></i>
+            <h4 class="text-xs font-bold text-slate-800">Playground</h4>
+            <p class="text-[11px] text-slate-500">Cricket, Football, Kabaddi</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-teal-50 transition">
+            <i class="fa-solid fa-glass-water-droplet text-2xl text-teal-600 mb-2"></i>
+            <h4 class="text-xs font-bold text-slate-800">RO Drinking Water</h4>
+            <p class="text-[11px] text-slate-500">Pure & Hygienic</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-purple-50 transition">
+            <i class="fa-solid fa-solar-panel text-2xl text-purple-600 mb-2"></i>
+            <h4 class="text-xs font-bold text-slate-800">Solar Power</h4>
+            <p class="text-[11px] text-slate-500">Eco-Friendly Energy</p>
+          </div>
+        </div>
+
+        <!-- School Basic Info Table / Highlights -->
+        <div class="mt-8 pt-6 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+          <div class="bg-slate-50 p-3 rounded-lg"><span class="font-bold text-slate-500">School Code:</span> <span class="font-bold text-brand-navy">UHS-SKT-04</span></div>
+          <div class="bg-slate-50 p-3 rounded-lg"><span class="font-bold text-slate-500">Affiliation:</span> <span class="font-bold text-brand-navy">State Board (BSEB)</span></div>
+          <div class="bg-slate-50 p-3 rounded-lg"><span class="font-bold text-slate-500">Medium:</span> <span class="font-bold text-brand-navy">Hindi & English</span></div>
+          <div class="bg-slate-50 p-3 rounded-lg"><span class="font-bold text-slate-500">Gender:</span> <span class="font-bold text-brand-navy">Co-Educational</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACADEMICS SECTION (Class 9, 10, 11, 12 with Streams) -->
+  <section id="academics" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider bg-blue-100 px-3 py-1 rounded-full">Curriculum & Classes</span>
+        <h2 class="text-3xl font-black text-brand-navy mt-2 sm:text-4xl">Academic Programs (कक्षा 9वीं से 12वीं)</h2>
+        <p class="text-slate-600 text-sm mt-3">Tailored syllabus, experienced mentorship, regular assessment, and complete stream facilities for Senior Secondary students.</p>
+      </div>
+
+      <!-- Class Selection Tabs -->
+      <div class="flex items-center justify-center space-x-2 md:space-x-3 mb-8 overflow-x-auto pb-2">
+        <button onclick="switchClassTab('class9')" id="tabBtn-class9" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-blue text-white shadow-sm">
+          Class 9th (नवमीं)
+        </button>
+        <button onclick="switchClassTab('class10')" id="tabBtn-class10" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-slate-100 text-slate-600 hover:bg-slate-200">
+          Class 10th (दसवीं - Board)
+        </button>
+        <button onclick="switchClassTab('class11')" id="tabBtn-class11" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-slate-100 text-slate-600 hover:bg-slate-200">
+          Class 11th (Intermediate)
+        </button>
+        <button onclick="switchClassTab('class12')" id="tabBtn-class12" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-slate-100 text-slate-600 hover:bg-slate-200">
+          Class 12th (Senior Board)
+        </button>
+      </div>
+
+      <!-- Tab Content: Class 9 -->
+      <div id="content-class9" class="academic-tab-content">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-3 flex items-center">
+              <i class="fa-solid fa-list-check text-brand-green mr-2"></i> Subjects Offered
+            </h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2 text-xs"></i> Hindi (मातृभाषा)</li>
+              <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2 text-xs"></i> Sanskrit / Urdu (द्वितीय भाषा)</li>
+              <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2 text-xs"></i> Mathematics (गणित)</li>
+              <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2 text-xs"></i> Science (भौतिकी, रसायन, जीवविज्ञान)</li>
+              <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2 text-xs"></i> Social Science (इतिहास, भूगोल, अर्थशास्त्र, नागरिक शास्त्र)</li>
+              <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2 text-xs"></i> English & ICT Foundation</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-3 flex items-center">
+              <i class="fa-solid fa-clock text-brand-blue mr-2"></i> Daily Routine & Timetable
+            </h4>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="flex justify-between py-1 border-b border-slate-200"><span>09:15 - 09:45 AM</span><span class="font-bold">Morning Assembly & Yoga</span></div>
+              <div class="flex justify-between py-1 border-b border-slate-200"><span>09:45 - 10:30 AM</span><span class="font-bold">Period 1: Mathematics</span></div>
+              <div class="flex justify-between py-1 border-b border-slate-200"><span>10:30 - 11:15 AM</span><span class="font-bold">Period 2: Science</span></div>
+              <div class="flex justify-between py-1 border-b border-slate-200"><span>11:15 - 12:00 PM</span><span class="font-bold">Period 3: Social Science</span></div>
+              <div class="flex justify-between py-1 border-b border-slate-200"><span>01:15 - 02:00 PM</span><span class="font-bold">Period 5: ICT Smart Lab</span></div>
+              <div class="flex justify-between py-1"><span>03:15 - 04:00 PM</span><span class="font-bold">Remedial & Sports</span></div>
+            </div>
+          </div>
+
+          <div class="bg-brand-lightBlue/40 p-6 rounded-2xl border border-blue-200 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-brand-navy text-lg mb-2 flex items-center">
+                <i class="fa-solid fa-file-arrow-down text-brand-blue mr-2"></i> Class 9 Downloads
+              </h4>
+              <p class="text-xs text-slate-600 mb-4">Official syllabus, model paper samples & chapter notes.</p>
+              <div class="space-y-2">
+                <a href="#downloads" class="block w-full py-2 px-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold text-brand-navy flex items-center justify-between">
+                  <span>Class 9 Updated Syllabus 2025</span>
+                  <i class="fa-solid fa-download text-brand-blue"></i>
+                </a>
+                <a href="#downloads" class="block w-full py-2 px-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold text-brand-navy flex items-center justify-between">
+                  <span>Mathematics Formula Book</span>
+                  <i class="fa-solid fa-download text-brand-blue"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-blue-200 text-[11px] text-brand-blue font-medium">
+              <i class="fa-solid fa-circle-info mr-1"></i> Quarterly Exams held in September & December
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Class 10 -->
+      <div id="content-class10" class="academic-tab-content hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-3 flex items-center">
+              <i class="fa-solid fa-star text-amber-500 mr-2"></i> Class 10 Board Curriculum
+            </h4>
+            <p class="text-xs text-slate-600 mb-3">Intensive preparation for State Board Matriculation examinations with special weekend crash courses.</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-center"><i class="fa-solid fa-check-double text-brand-blue mr-2 text-xs"></i> 100% NCERT / SCERT coverage</li>
+              <li class="flex items-center"><i class="fa-solid fa-check-double text-brand-blue mr-2 text-xs"></i> Weekly Mock Tests & OMR Practice</li>
+              <li class="flex items-center"><i class="fa-solid fa-check-double text-brand-blue mr-2 text-xs"></i> Practical Science Experiment batches</li>
+              <li class="flex items-center"><i class="fa-solid fa-check-double text-brand-blue mr-2 text-xs"></i> Previous 10 Years Solved Papers</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-3 flex items-center">
+              <i class="fa-solid fa-calendar-days text-brand-green mr-2"></i> Board Schedule & Pre-Boards
+            </h4>
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div class="p-2 bg-white rounded border border-slate-200">
+                <span class="font-bold text-brand-navy block">Pre-Board Examination:</span>
+                <span class="text-slate-500">December - January annual cycle</span>
+              </div>
+              <div class="p-2 bg-white rounded border border-slate-200">
+                <span class="font-bold text-brand-navy block">Practical Examinations:</span>
+                <span class="text-slate-500">Internal assessment & viva in laboratory</span>
+              </div>
+              <div class="p-2 bg-white rounded border border-slate-200">
+                <span class="font-bold text-brand-navy block">Remedial Classes:</span>
+                <span class="text-slate-500">Targeted support for challenging topics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-200 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-brand-navy text-lg mb-2 flex items-center">
+                <i class="fa-solid fa-download text-brand-green mr-2"></i> Class 10 Resources
+              </h4>
+              <p class="text-xs text-slate-600 mb-4">Official question bank & test series download.</p>
+              <div class="space-y-2">
+                <a href="#downloads" class="block w-full py-2 px-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold text-brand-navy flex items-center justify-between">
+                  <span>Class 10 Science Practical Manual</span>
+                  <i class="fa-solid fa-download text-emerald-600"></i>
+                </a>
+                <a href="#downloads" class="block w-full py-2 px-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold text-brand-navy flex items-center justify-between">
+                  <span>Maths & SST Revision Capsules</span>
+                  <i class="fa-solid fa-download text-emerald-600"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-emerald-200 text-[11px] text-emerald-800 font-medium">
+              <i class="fa-solid fa-award mr-1"></i> UHS Siktia holds a 98%+ pass record in Matric
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Class 11 (Streams: Science, Arts, Commerce) -->
+      <div id="content-class11" class="academic-tab-content hidden">
+        <div class="mb-4 bg-slate-100 p-2 rounded-xl flex items-center justify-start space-x-2 w-fit">
+          <span class="text-xs font-bold text-slate-600 px-2">Select Stream:</span>
+          <button onclick="switchStream('c11', 'sci')" id="btn-c11-sci" class="stream-btn-c11 px-3 py-1 text-xs font-bold rounded-lg bg-brand-blue text-white">Science</button>
+          <button onclick="switchStream('c11', 'arts')" id="btn-c11-arts" class="stream-btn-c11 px-3 py-1 text-xs font-semibold rounded-lg text-slate-700 hover:bg-white">Arts (Humanities)</button>
+          <button onclick="switchStream('c11', 'comm')" id="btn-c11-comm" class="stream-btn-c11 px-3 py-1 text-xs font-semibold rounded-lg text-slate-700 hover:bg-white">Commerce</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-2" id="c11-stream-title">Science Stream Subjects</h4>
+            <div id="c11-stream-subjects" class="text-xs text-slate-700 space-y-2 mt-3">
+              <p class="p-2 bg-white rounded border"><strong>Physics:</strong> Mechanics, Thermodynamics, Waves</p>
+              <p class="p-2 bg-white rounded border"><strong>Chemistry:</strong> Organic, Inorganic & Physical Basics</p>
+              <p class="p-2 bg-white rounded border"><strong>Mathematics / Biology:</strong> Calculus or Botany & Zoology</p>
+              <p class="p-2 bg-white rounded border"><strong>Language:</strong> English & Hindi / Urdu</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-2">Class 11 Methodology</h4>
+            <ul class="space-y-2.5 text-xs text-slate-700 mt-3">
+              <li class="flex items-start"><i class="fa-solid fa-check text-brand-green mr-2 mt-0.5"></i> Comprehensive syllabus as per modern board norms.</li>
+              <li class="flex items-start"><i class="fa-solid fa-check text-brand-green mr-2 mt-0.5"></i> Regular computer sessions in the ICT laboratory.</li>
+              <li class="flex items-start"><i class="fa-solid fa-check text-brand-green mr-2 mt-0.5"></i> Guidance for competitive exams (JEE, NEET, CUET, NDA).</li>
+              <li class="flex items-start"><i class="fa-solid fa-check text-brand-green mr-2 mt-0.5"></i> Periodic internal assignments and unit tests.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 flex flex-col justify-between shadow-sm">
+            <div>
+              <h4 class="font-bold text-brand-navy text-base mb-2">Class 11 Academic Portal</h4>
+              <p class="text-xs text-slate-600 mb-3">Download timetable, curriculum framework & books list.</p>
+              <div class="space-y-2">
+                <a href="#downloads" class="block w-full py-2 px-3 bg-brand-lightBlue/60 hover:bg-brand-lightBlue rounded-lg text-xs font-semibold text-brand-blue flex items-center justify-between">
+                  <span>Class 11 Syllabus & Subject Codes</span>
+                  <i class="fa-solid fa-download"></i>
+                </a>
+                <a href="#downloads" class="block w-full py-2 px-3 bg-slate-50 hover:bg-slate-100 rounded-lg text-xs font-semibold text-slate-700 flex items-center justify-between border">
+                  <span>Class 11 Routine (All Streams)</span>
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </div>
+            </div>
+            <button onclick="scrollToSection('contact')" class="mt-4 w-full py-2.5 bg-brand-green hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition">
+              Inquire for Class 11 Admission
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Class 12 (Intermediate Senior) -->
+      <div id="content-class12" class="academic-tab-content hidden">
+        <div class="mb-4 bg-slate-100 p-2 rounded-xl flex items-center justify-start space-x-2 w-fit">
+          <span class="text-xs font-bold text-slate-600 px-2">Select Stream:</span>
+          <button onclick="switchStream('c12', 'sci')" id="btn-c12-sci" class="stream-btn-c12 px-3 py-1 text-xs font-bold rounded-lg bg-brand-blue text-white">Science</button>
+          <button onclick="switchStream('c12', 'arts')" id="btn-c12-arts" class="stream-btn-c12 px-3 py-1 text-xs font-semibold rounded-lg text-slate-700 hover:bg-white">Arts (Humanities)</button>
+          <button onclick="switchStream('c12', 'comm')" id="btn-c12-comm" class="stream-btn-c12 px-3 py-1 text-xs font-semibold rounded-lg text-slate-700 hover:bg-white">Commerce</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-2" id="c12-stream-title">Class 12 - Senior Secondary</h4>
+            <div id="c12-stream-subjects" class="text-xs text-slate-700 space-y-2 mt-3">
+              <p class="p-2 bg-white rounded border"><strong>Physics:</strong> Electromagnetism, Optics, Modern Physics</p>
+              <p class="p-2 bg-white rounded border"><strong>Chemistry:</strong> Organic Synthesis, Coordination Compounds</p>
+              <p class="p-2 bg-white rounded border"><strong>Maths / Biology:</strong> Calculus & Vectors / Genetics & Biotech</p>
+              <p class="p-2 bg-white rounded border"><strong>Compulsory:</strong> Hindi (100) & English (100)</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-brand-navy text-lg mb-2">Intermediate Board Focus</h4>
+            <ul class="space-y-2.5 text-xs text-slate-700 mt-3">
+              <li class="flex items-start"><i class="fa-solid fa-award text-amber-500 mr-2 mt-0.5"></i> Rigorous syllabus completion before December.</li>
+              <li class="flex items-start"><i class="fa-solid fa-award text-amber-500 mr-2 mt-0.5"></i> Sent-Up Examination and answer sheet evaluation feedback.</li>
+              <li class="flex items-start"><i class="fa-solid fa-award text-amber-500 mr-2 mt-0.5"></i> Laboratory practical workbooks & viva assessments.</li>
+              <li class="flex items-start"><i class="fa-solid fa-award text-amber-500 mr-2 mt-0.5"></i> Career counseling for College and Polytechnic entries.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 flex flex-col justify-between shadow-sm">
+            <div>
+              <h4 class="font-bold text-brand-navy text-base mb-2">Class 12 Board Corner</h4>
+              <p class="text-xs text-slate-600 mb-3">Model papers, previous papers, and project guides.</p>
+              <div class="space-y-2">
+                <a href="#downloads" class="block w-full py-2 px-3 bg-brand-lightBlue/60 hover:bg-brand-lightBlue rounded-lg text-xs font-semibold text-brand-blue flex items-center justify-between">
+                  <span>Class 12 Model Papers (All Streams)</span>
+                  <i class="fa-solid fa-download"></i>
+                </a>
+                <a href="#downloads" class="block w-full py-2 px-3 bg-slate-50 hover:bg-slate-100 rounded-lg text-xs font-semibold text-slate-700 flex items-center justify-between border">
+                  <span>Practical Examination Guidelines</span>
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t text-[11px] text-slate-500 text-center">
+              Special Board Mentorship by Headmaster & Subject Experts
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TEACHERS & STAFF SECTION -->
+  <section id="teachers" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-brand-green uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Educators</span>
+        <h2 class="text-3xl font-black text-brand-navy mt-2 sm:text-4xl">Our Dedicated Teachers & Staff</h2>
+        <p class="text-slate-600 text-sm mt-3">Qualified, passionate, and experienced pedagogues leading the students of UHS Siktia toward a brighter future.</p>
+      </div>
+
+      <!-- Teacher Cards Container (Populated / Updated via Admin) -->
+      <div id="teachersGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <!-- Teacher 1: Principal -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+          <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=500&q=80" alt="Shri Jitendra Kumar Patel" class="w-full h-full object-cover object-top" />
+            <span class="absolute top-3 right-3 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Administration</span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-brand-navy text-base">श्री जितेंद्र कुमार पटेल</h4>
+            <p class="text-xs font-semibold text-brand-green mb-1">प्रधानाध्यापक (Headmaster)</p>
+            <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-book-bookmark mr-1 text-slate-400"></i> Mathematics & Administration</p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>M.Sc., B.Ed.</span>
+              <span class="text-emerald-700 font-semibold">18+ Yrs Exp.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher 2: Senior Science -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+          <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover object-top" />
+            <span class="absolute top-3 right-3 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Science Dept</span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-brand-navy text-base">Smt. Anjali Kumari</h4>
+            <p class="text-xs font-semibold text-brand-green mb-1">PGT - Physics</p>
+            <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-book-bookmark mr-1 text-slate-400"></i> Senior Secondary Science</p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>M.Sc. (Physics), B.Ed.</span>
+              <span class="text-emerald-700 font-semibold">10+ Yrs Exp.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher 3: ICT & Tech -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+          <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover object-top" />
+            <span class="absolute top-3 right-3 bg-brand-blue text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">ICT & Digital</span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-brand-navy text-base">Shri Rajesh Sharma</h4>
+            <p class="text-xs font-semibold text-brand-green mb-1">ICT Lab In-Charge & CS</p>
+            <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-book-bookmark mr-1 text-slate-400"></i> Computer Science & AI</p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>MCA, B.Ed.</span>
+              <span class="text-emerald-700 font-semibold">7+ Yrs Exp.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher 4: Language & Arts -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+          <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover object-top" />
+            <span class="absolute top-3 right-3 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Arts Dept</span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-brand-navy text-base">Dr. Manoj Verma</h4>
+            <p class="text-xs font-semibold text-brand-green mb-1">PGT - Hindi Literature</p>
+            <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-book-bookmark mr-1 text-slate-400"></i> Hindi & Sanskrit</p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>M.A. (Hindi), Ph.D.</span>
+              <span class="text-emerald-700 font-semibold">14+ Yrs Exp.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NOTICE BOARD SECTION -->
+  <section id="notices" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-bold text-brand-green uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">School Bulletin</span>
+          <h2 class="text-3xl font-black text-brand-navy mt-2">Notice Board & Announcements</h2>
+          <p class="text-slate-600 text-sm mt-1">Official circulars, holiday calendars, examination time tables, and state notifications.</p>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="filterNotices('all')" class="notice-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-navy text-white">All Notices</button>
+          <button onclick="filterNotices('exam')" class="notice-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200">Examinations</button>
+          <button onclick="filterNotices('admission')" class="notice-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200">Admissions</button>
+          <button onclick="filterNotices('holiday')" class="notice-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200">Holidays</button>
+        </div>
+      </div>
+
+      <!-- Notice List Container (Dynamic with Admin) -->
+      <div id="noticeList" class="space-y-3.5">
+        
+        <!-- Notice Item 1 -->
+        <div class="notice-item bg-slate-50 hover:bg-brand-lightBlue/30 p-4 md:p-5 rounded-2xl border border-slate-200 transition flex flex-col md:flex-row md:items-center justify-between gap-4" data-category="admission">
+          <div class="flex items-start space-x-3.5">
+            <div class="w-12 h-12 rounded-xl bg-brand-blue text-white flex flex-col items-center justify-center shrink-0">
+              <span class="text-xs font-bold uppercase leading-tight">OCT</span>
+              <span class="text-base font-extrabold leading-none">24</span>
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-100 text-brand-blue">Admission Notice</span>
+                <span class="text-xs text-slate-400">Class 9th & 11th Enrollment</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mt-1">
+                Admissions for Session 2025-2026: Form Submission Guidelines
+              </h4>
+              <p class="text-xs text-slate-600 mt-0.5">
+                Application forms for Class 9th and Class 11th (Science, Arts, Commerce) are now available in the school counter and downloads tab.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 shrink-0 self-end md:self-center">
+            <button onclick="simulatePdfDownload('Admission_Form_Notice_2025.pdf')" class="px-3 py-1.5 bg-white border border-slate-300 hover:border-brand-blue text-brand-blue text-xs font-bold rounded-lg shadow-sm flex items-center transition">
+              <i class="fa-solid fa-file-pdf text-red-500 mr-1.5 text-sm"></i> Download PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Notice Item 2 -->
+        <div class="notice-item bg-slate-50 hover:bg-brand-lightBlue/30 p-4 md:p-5 rounded-2xl border border-slate-200 transition flex flex-col md:flex-row md:items-center justify-between gap-4" data-category="exam">
+          <div class="flex items-start space-x-3.5">
+            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex flex-col items-center justify-center shrink-0">
+              <span class="text-xs font-bold uppercase leading-tight">NOV</span>
+              <span class="text-base font-extrabold leading-none">05</span>
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-100 text-emerald-800">Exam Circular</span>
+                <span class="text-xs text-slate-400">Class 10th & 12th Board Sent-Up</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mt-1">
+                Sent-Up Examination Schedule & Practical Exam Dates
+              </h4>
+              <p class="text-xs text-slate-600 mt-0.5">
+                Mandatory attendance for all appearing board students. Practical exam schedules for Science laboratories are attached.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 shrink-0 self-end md:self-center">
+            <button onclick="simulatePdfDownload('Sentup_Exam_Routine_2025.pdf')" class="px-3 py-1.5 bg-white border border-slate-300 hover:border-brand-blue text-brand-blue text-xs font-bold rounded-lg shadow-sm flex items-center transition">
+              <i class="fa-solid fa-file-pdf text-red-500 mr-1.5 text-sm"></i> Download PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Notice Item 3 -->
+        <div class="notice-item bg-slate-50 hover:bg-brand-lightBlue/30 p-4 md:p-5 rounded-2xl border border-slate-200 transition flex flex-col md:flex-row md:items-center justify-between gap-4" data-category="holiday">
+          <div class="flex items-start space-x-3.5">
+            <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex flex-col items-center justify-center shrink-0">
+              <span class="text-xs font-bold uppercase leading-tight">NOV</span>
+              <span class="text-base font-extrabold leading-none">12</span>
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-100 text-amber-800">Festival Holiday</span>
+                <span class="text-xs text-slate-400">School Office & Classes Closed</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mt-1">
+                दीपावली एवं छठ पूजा अवकाश सूचना (Diwali & Chhath Puja Holidays)
+              </h4>
+              <p class="text-xs text-slate-600 mt-0.5">
+                The school campus will remain closed on the auspicious occasion of Deepawali and Chhath Mahaparv. Normal classes resume on announced date.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 shrink-0 self-end md:self-center">
+            <button onclick="simulatePdfDownload('Holiday_List_Festivals.pdf')" class="px-3 py-1.5 bg-white border border-slate-300 hover:border-brand-blue text-brand-blue text-xs font-bold rounded-lg shadow-sm flex items-center transition">
+              <i class="fa-solid fa-file-pdf text-red-500 mr-1.5 text-sm"></i> Download PDF
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ICT LAB / SMART CLASSROOM SECTION -->
+  <section id="ict-lab" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(#1e3a8a_1px,transparent_1px)] [background-size:16px_16px] opacity-25"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center space-x-2 bg-emerald-500/20 text-emerald-400 px-3.5 py-1.5 rounded-full text-xs font-bold border border-emerald-500/30">
+            <i class="fa-solid fa-microchip"></i> Digital Learning Initiative
+          </div>
+          
+          <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">
+            Advanced ICT Computer Lab & Smart Classrooms
+          </h2>
+
+          <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            At <strong>Upgraded High School Siktia</strong>, our state-of-the-art Information and Communication Technology (ICT) lab brings world-class digital pedagogy directly to our students. Empowering young learners with digital literacy, programming, and state multimedia curriculum.
+          </p>
+
+          <!-- Lab Specs Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+              <i class="fa-solid fa-computer text-2xl text-cyan-400 mb-2"></i>
+              <h4 class="text-sm font-bold text-white">20+ Workstations</h4>
+              <p class="text-xs text-slate-400">High-speed Core i5/i7</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+              <i class="fa-solid fa-wifi text-2xl text-emerald-400 mb-2"></i>
+              <h4 class="text-sm font-bold text-white">Broadband Fiber</h4>
+              <p class="text-xs text-slate-400">100 Mbps Unlimited</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+              <i class="fa-solid fa-tv text-2xl text-amber-400 mb-2"></i>
+              <h4 class="text-sm font-bold text-white">Interactive Panel</h4>
+              <p class="text-xs text-slate-400">75" 4K Smart Board</p>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-xs text-slate-300 pt-2">
+            <p class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-400 mr-2"></i> Daily scheduled practical periods for 9th, 10th, 11th & 12th classes</p>
+            <p class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-400 mr-2"></i> Uninterrupted solar hybrid inverter & power backup</p>
+            <p class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-400 mr-2"></i> Certified instructors providing MS Office, Python & Cyber safety modules</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 group">
+            <img 
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80" 
+              alt="ICT Lab UHS Siktia" 
+              class="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 text-white">
+              <span class="bg-cyan-500 text-slate-950 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded">Digital India Partner</span>
+              <h4 class="text-lg font-bold mt-1">Smart Virtual Classroom Hub</h4>
+              <p class="text-xs text-slate-300">Live animated lectures and audio-visual educational software for all science and math subjects.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-bold text-brand-green uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Moments & Memories</span>
+        <h2 class="text-3xl font-black text-brand-navy mt-2 sm:text-4xl">School Photo Gallery (चित्र वीथिका)</h2>
+        <p class="text-slate-600 text-sm mt-3">Glimpses of cultural programs, sports meets, national festivals, and educational activities at UHS Siktia.</p>
+      </div>
+
+      <!-- Gallery Filter Chips -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+        <button onclick="filterGallery('all')" class="gal-btn px-4 py-1.5 rounded-full text-xs font-bold bg-brand-navy text-white">All Photos</button>
+        <button onclick="filterGallery('events')" class="gal-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-700 hover:bg-slate-200 border">Events & Celebrations</button>
+        <button onclick="filterGallery('sports')" class="gal-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-700 hover:bg-slate-200 border">Sports & Games</button>
+        <button onclick="filterGallery('lab')" class="gal-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-700 hover:bg-slate-200 border">ICT & Labs</button>
+      </div>
+
+      <!-- Gallery Grid (Dynamic) -->
+      <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="events" onclick="openLightbox('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80', 'Independence Day Parade & Flag Hoisting')">
+          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80" alt="Flag Hoisting" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">Independence Day Celebrations</span>
+          </div>
+        </div>
+
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="sports" onclick="openLightbox('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80', 'Annual Athletics & Track Sports Meet')">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80" alt="Sports" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">Annual Sports Championship</span>
+          </div>
+        </div>
+
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="lab" onclick="openLightbox('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80', 'Students at ICT Lab Computer Session')">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="ICT Session" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">Smart Digital Learning Session</span>
+          </div>
+        </div>
+
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="events" onclick="openLightbox('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80', 'Cultural Dance and Drama Performance')">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Cultural Dance" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">Saraswati Puja & Cultural Fest</span>
+          </div>
+        </div>
+
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="lab" onclick="openLightbox('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80', 'Science Exhibition Demonstration')">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" alt="Science Lab" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">State Science Exhibition Project</span>
+          </div>
+        </div>
+
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="sports" onclick="openLightbox('https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=1200&q=80', 'Kabaddi and Volleyball Matches')">
+          <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=600&q=80" alt="Volleyball" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">Inter-School Kabaddi Match</span>
+          </div>
+        </div>
+
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="events" onclick="openLightbox('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80', 'Teacher Felicitation Ceremony')">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Teacher Felicitation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">Teachers Day & Award Ceremony</span>
+          </div>
+        </div>
+
+        <div class="gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer" data-category="events" onclick="openLightbox('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1200&q=80', 'Student Group Study in Central Library')">
+          <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80" alt="Library Study" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+            <span class="text-white text-xs font-bold">Central Library Reading Session</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DOWNLOADS CENTER -->
+  <section id="downloads" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider bg-blue-100 px-3 py-1 rounded-full">Resource Center</span>
+        <h2 class="text-3xl font-black text-brand-navy mt-2 sm:text-4xl">Downloads & Study Material</h2>
+        <p class="text-slate-600 text-sm mt-3">Access digital study materials, syllabi, previous question banks, and official administrative forms in PDF format.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Category: Class 9 & 10 -->
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+          <div class="flex items-center space-x-2 text-brand-navy font-bold text-sm mb-4 pb-2 border-b">
+            <i class="fa-solid fa-graduation-cap text-brand-blue"></i>
+            <span>Class 9 & 10 Material</span>
+          </div>
+          <div class="space-y-2.5">
+            <button onclick="simulatePdfDownload('Class_9_Complete_Maths_Notes.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-brand-lightBlue rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-brand-blue">Class 9 Maths Chapterwise Notes</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-brand-blue text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Class_10_Science_Quick_Revision.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-brand-lightBlue rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-brand-blue">Class 10 Science Formula Bank</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-brand-blue text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Class_10_SST_Map_Work.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-brand-lightBlue rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-brand-blue">Class 10 Social Science Maps</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-brand-blue text-xs ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category: Class 11 & 12 -->
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+          <div class="flex items-center space-x-2 text-brand-navy font-bold text-sm mb-4 pb-2 border-b">
+            <i class="fa-solid fa-atom text-emerald-600"></i>
+            <span>Class 11 & 12 Material</span>
+          </div>
+          <div class="space-y-2.5">
+            <button onclick="simulatePdfDownload('Class_11_Physics_Practicals.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-emerald-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-emerald-700">Class 11 Physics Lab Manual</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-emerald-700 text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Class_12_Chemistry_Organic_Reactions.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-emerald-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-emerald-700">Class 12 Organic Chemistry Chart</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-emerald-700 text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Class_12_Arts_History_QnA.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-emerald-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-emerald-700">Class 12 Arts / History Summary</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-emerald-700 text-xs ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category: Forms & Admission -->
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+          <div class="flex items-center space-x-2 text-brand-navy font-bold text-sm mb-4 pb-2 border-b">
+            <i class="fa-solid fa-file-lines text-amber-600"></i>
+            <span>Forms & Applications</span>
+          </div>
+          <div class="space-y-2.5">
+            <button onclick="simulatePdfDownload('Student_Admission_Form_Blank.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-amber-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-amber-800">Fresh Admission Form 2025</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-amber-800 text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Transfer_Certificate_TC_Application.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-amber-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-amber-800">TC & Migration Request Form</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-amber-800 text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Scholarship_OBC_SC_ST_Form.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-amber-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-amber-800">State Scholarship Application</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-amber-800 text-xs ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category: Syllabi & Routines -->
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+          <div class="flex items-center space-x-2 text-brand-navy font-bold text-sm mb-4 pb-2 border-b">
+            <i class="fa-solid fa-calendar text-purple-600"></i>
+            <span>Syllabus & Calendars</span>
+          </div>
+          <div class="space-y-2.5">
+            <button onclick="simulatePdfDownload('Annual_Academic_Calendar_2025.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-purple-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-purple-800">Annual Academic Calendar 2025</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-purple-800 text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Master_Class_Timetable_All.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-purple-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-purple-800">Master Class Routine (9 - 12)</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-purple-800 text-xs ml-2"></i>
+            </button>
+            <button onclick="simulatePdfDownload('Holiday_List_Gazetted_2025.pdf')" class="w-full text-left p-2.5 bg-white hover:bg-purple-50 rounded-xl border border-slate-200 transition text-xs flex items-center justify-between group">
+              <span class="truncate font-medium text-slate-700 group-hover:text-purple-800">Gazetted Holiday List</span>
+              <i class="fa-solid fa-download text-slate-400 group-hover:text-purple-800 text-xs ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+  <section id="contact" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-brand-green uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Reach UHS Siktia</span>
+        <h2 class="text-3xl font-black text-brand-navy mt-2 sm:text-4xl">Contact & Location Details</h2>
+        <p class="text-slate-600 text-sm mt-3">We welcome parents, visitors, and students to communicate with our administrative office during work hours.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Info Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+            
+            <div class="flex items-start space-x-3.5">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-brand-navy text-sm">School Campus Address</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  <strong>UPGRADED HIGH SCHOOL SIKTIA</strong><br>
+                  Village & Post: Siktia, Block Development Area,<br>
+                  State Recognized District Zone, PIN: 84XXXX
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3.5">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-brand-green flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-brand-navy text-sm">Office Contact Numbers</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  Principal Desk: +91 9431X XXXXX<br>
+                  Enquiry Desk: +91 9122X XXXXX
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3.5">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-envelope text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-brand-navy text-sm">Official Email Address</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  uhssiktia.school@gmail.com<br>
+                  principal@uhssiktia.edu.in
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3.5">
+              <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-brand-navy text-sm">Operational Timings</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  <strong>Monday - Saturday:</strong> 09:00 AM – 04:00 PM<br>
+                  <strong>Sundays & Govt. Holidays:</strong> Closed
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Google Maps Mockup Frame -->
+          <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="relative w-full h-48 rounded-xl overflow-hidden bg-slate-200">
+              <iframe 
+                title="School Location Map"
+                class="w-full h-full border-0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114674.88567520448!2d84.50!3d26.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE1JzAwLjAiTiA4NMKwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                loading="lazy">
+              </iframe>
+              <div class="absolute bottom-2 left-2 bg-white/90 backdrop-blur-sm text-[11px] font-bold px-2 py-1 rounded text-brand-navy shadow">
+                <i class="fa-solid fa-map-pin text-red-500 mr-1"></i> UHS Siktia Campus
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Query Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="text-xl font-bold text-brand-navy mb-2">Send an Enquiry / Message</h3>
+            <p class="text-xs text-slate-500 mb-6">Have queries regarding admissions, transfer certificates, or student records? Fill the form below.</p>
+            
+            <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
+                  <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+                  <input type="tel" required placeholder="10 Digit Mobile Number" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+                  <input type="email" placeholder="example@email.com" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Purpose / Class Concerned</label>
+                  <select class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue text-slate-700">
+                    <option>Admission Enquiry (Class 9 - 12)</option>
+                    <option>Class 11/12 Stream Selection</option>
+                    <option>Transfer Certificate (TC)</option>
+                    <option>ICT Lab & Facilities</option>
+                    <option>General School Query</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Your Message / Query *</label>
+                <textarea rows="4" required placeholder="Please write your questions here..." class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue"></textarea>
+              </div>
+
+              <div class="flex items-center space-x-2 pt-1">
+                <input type="checkbox" id="consent" required class="rounded text-brand-blue focus:ring-brand-blue h-4 w-4" />
+                <label for="consent" class="text-xs text-slate-600">I confirm the details provided are accurate for school records.</label>
+              </div>
+
+              <button type="submit" class="w-full py-3 bg-brand-green hover:bg-emerald-700 text-white font-bold rounded-xl text-xs sm:text-sm shadow-md transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Submit Query to School Office</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navy text-white pt-14 pb-8 border-t-4 border-brand-green">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-white/10">
+        
+        <!-- School Identity Col -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center p-1">
+              <i class="fa-solid fa-graduation-cap text-brand-blue text-2xl"></i>
+            </div>
+            <div>
+              <h4 class="font-extrabold text-base leading-tight">UHS SIKTIA</h4>
+              <p class="text-[11px] text-emerald-400">उ. उच्च माध्यमिक विद्यालय, सिकटिया</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Fostering academic excellence, moral discipline, and computer literacy from 9th grade to Senior Secondary education.
+          </p>
+          <div class="pt-1">
+            <p class="text-xs font-bold text-amber-300">
+              प्रधानाध्यापक: श्री जितेंद्र कुमार पटेल
+            </p>
+            <p class="text-[11px] text-slate-400">Headmaster In-Charge</p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-emerald-400 mb-4">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li><a href="#about" class="hover:text-white transition"><i class="fa-solid fa-angle-right mr-1.5 text-emerald-500"></i> Vision & Mission</a></li>
+            <li><a href="#academics" class="hover:text-white transition"><i class="fa-solid fa-angle-right mr-1.5 text-emerald-500"></i> Class 9th & 10th Syllabus</a></li>
+            <li><a href="#academics" class="hover:text-white transition"><i class="fa-solid fa-angle-right mr-1.5 text-emerald-500"></i> Class 11 & 12 Streams (Sci/Arts/Com)</a></li>
+            <li><a href="#teachers" class="hover:text-white transition"><i class="fa-solid fa-angle-right mr-1.5 text-emerald-500"></i> Faculty Directory</a></li>
+            <li><a href="#ict-lab" class="hover:text-white transition"><i class="fa-solid fa-angle-right mr-1.5 text-emerald-500"></i> Modern ICT Lab</a></li>
+            <li><a href="#notices" class="hover:text-white transition"><i class="fa-solid fa-angle-right mr-1.5 text-emerald-500"></i> Examinations & Notice Board</a></li>
+          </ul>
+        </div>
+
+        <!-- Academics Stream Links -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-emerald-400 mb-4">Intermediate Streams</h4>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li><a href="#academics" class="hover:text-white transition"><i class="fa-solid fa-flask mr-1.5 text-cyan-400"></i> Science (Physics, Chem, Bio, Math)</a></li>
+            <li><a href="#academics" class="hover:text-white transition"><i class="fa-solid fa-palette mr-1.5 text-amber-400"></i> Arts (History, Pol. Sc., Geography)</a></li>
+            <li><a href="#academics" class="hover:text-white transition"><i class="fa-solid fa-chart-line mr-1.5 text-emerald-400"></i> Commerce (Accounts, Economics, BST)</a></li>
+            <li><a href="#downloads" class="hover:text-white transition"><i class="fa-solid fa-file-pdf mr-1.5 text-red-400"></i> Question Banks & Papers</a></li>
+            <li><a href="#downloads" class="hover:text-white transition"><i class="fa-solid fa-award mr-1.5 text-yellow-400"></i> State Scholarship Desk</a></li>
+          </ul>
+        </div>
+
+        <!-- Administrative & Help -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-emerald-400 mb-4">Admin & Staff Portal</h4>
+          <p class="text-xs text-slate-300 leading-relaxed mb-3">
+            Authorized school faculty can access the dynamic admin CMS panel to publish circulars and update study materials.
+          </p>
+          <button onclick="openAdminModal()" class="w-full py-2.5 px-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-xl text-xs font-bold transition flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-lock text-amber-400"></i>
+            <span>School Admin Dashboard</span>
+          </button>
+          <div class="mt-4 text-[11px] text-slate-400 space-y-1">
+            <p><i class="fa-solid fa-shield-halved text-brand-green mr-1"></i> Secured with SSL Encryption</p>
+            <p><i class="fa-solid fa-clock text-brand-green mr-1"></i> UDISE Code: 10020304001</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+        <p>© 2025 UPGRADED HIGH SCHOOL SIKTIA (उत्क्रमित उच्च माध्यमिक विद्यालय, सिकटिया). All Rights Reserved.</p>
+        <p class="flex items-center space-x-3">
+          <span class="hover:text-white cursor-pointer">Privacy Policy</span>
+          <span>•</span>
+          <span class="hover:text-white cursor-pointer">Terms of Use</span>
+          <span>•</span>
+          <span class="hover:text-white cursor-pointer" onclick="scrollToSection('contact')">Official Helpdesk</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR GALLERY -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+    <div class="relative max-w-4xl w-full">
+      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white text-2xl hover:text-red-400 focus:outline-none">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImage" src="" alt="Enlarged View" class="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl" />
+      <p id="lightboxCaption" class="text-white text-center text-sm font-semibold mt-3"></p>
+    </div>
+  </div>
+
+  <!-- ADMIN AUTH & DASHBOARD MODAL -->
+  <div id="adminModal" class="fixed inset-0 z-50 bg-black/70 hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl w-full max-w-4xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden border border-slate-200">
+      
+      <!-- Admin Modal Header -->
+      <div class="bg-brand-navy text-white px-6 py-4 flex items-center justify-between shrink-0">
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-amber-400">
+            <i class="fa-solid fa-user-shield text-lg"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-base leading-tight">UHS Siktia - Admin Portal</h3>
+            <p class="text-xs text-slate-300">Authorized Management Dashboard (Demo Mode)</p>
+          </div>
+        </div>
+        <button onclick="closeAdminModal()" class="text-slate-300 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Admin Modal Body -->
+      <div class="p-6 overflow-y-auto custom-scrollbar flex-1">
+        
+        <!-- Auth Barrier (Toggled with simple state) -->
+        <div id="adminAuthScreen" class="max-w-sm mx-auto text-center py-6 space-y-4">
+          <div class="w-16 h-16 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mx-auto text-2xl">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-800">Staff Credentials Login</h4>
+          <p class="text-xs text-slate-500">Enter headmaster/staff administrative passcode to access edit controls.</p>
+          
+          <div class="space-y-3 text-left">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Username</label>
+              <input type="text" id="adminUser" value="principal_siktia" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-blue" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Security PIN / Password</label>
+              <input type="password" id="adminPin" value="admin123" placeholder="Enter PIN" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-blue" />
+              <p class="text-[11px] text-slate-400 mt-1">Hint: Default password is <code class="bg-slate-100 px-1 py-0.5 rounded text-brand-blue font-bold">admin123</code></p>
+            </div>
+            <button onclick="loginAdmin()" class="w-full py-2.5 bg-brand-blue hover:bg-blue-800 text-white font-bold rounded-xl text-xs transition">
+              Verify & Unlock Dashboard
+            </button>
+          </div>
+        </div>
+
+        <!-- Authenticated Dashboard Controls -->
+        <div id="adminDashboardPanel" class="hidden space-y-6">
+          
+          <!-- Top Stats Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+            <div>
+              <p class="text-xs text-slate-500">Notices Count</p>
+              <p class="text-lg font-black text-brand-navy" id="statNoticeCount">3 Active</p>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500">Teachers Listed</p>
+              <p class="text-lg font-black text-emerald-700">4 Faculty</p>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500">ICT Lab Units</p>
+              <p class="text-lg font-black text-brand-blue">20 Systems Online</p>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500">Session</p>
+              <p class="text-lg font-black text-amber-600">2025-2026</p>
+            </div>
+          </div>
+
+          <!-- Section 1: Publish New Notice -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h4 class="font-bold text-brand-navy text-sm mb-3 flex items-center">
+              <i class="fa-solid fa-bullhorn text-brand-green mr-2"></i> Publish New Notice / Circular
+            </h4>
+            <form onsubmit="handleAddNewNotice(event)" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="sm:col-span-2">
+                  <label class="block text-[11px] font-bold text-slate-600 mb-1">Notice Title *</label>
+                  <input type="text" id="newNoticeTitle" required placeholder="e.g. Schedule for Half-Yearly Science Viva" class="w-full text-xs px-3 py-2 rounded-lg border focus:outline-none focus:border-brand-blue" />
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-600 mb-1">Notice Category</label>
+                  <select id="newNoticeCat" class="w-full text-xs px-3 py-2 rounded-lg border focus:outline-none focus:border-brand-blue">
+                    <option value="admission">Admission</option>
+                    <option value="exam">Examination</option>
+                    <option value="holiday">Holiday</option>
+                    <option value="all">General Circular</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-bold text-slate-600 mb-1">Description / Short Details *</label>
+                <textarea id="newNoticeDesc" rows="2" required placeholder="Brief description of the announcement..." class="w-full text-xs px-3 py-2 rounded-lg border focus:outline-none focus:border-brand-blue"></textarea>
+              </div>
+
+              <div class="flex items-center justify-between pt-1">
+                <span class="text-[11px] text-slate-400">PDF will be auto-generated for student download simulator</span>
+                <button type="submit" class="px-4 py-2 bg-brand-green hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition">
+                  <i class="fa-solid fa-plus mr-1"></i> Post Notice Live
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Section 2: Add New Teacher -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h4 class="font-bold text-brand-navy text-sm mb-3 flex items-center">
+              <i class="fa-solid fa-user-plus text-brand-blue mr-2"></i> Add / Update Teacher Information
+            </h4>
+            <form onsubmit="handleAddNewTeacher(event)" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-600 mb-1">Teacher Full Name *</label>
+                  <input type="text" id="tName" required placeholder="e.g. Shri Amit Singh" class="w-full text-xs px-3 py-2 rounded-lg border focus:outline-none focus:border-brand-blue" />
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-600 mb-1">Designation *</label>
+                  <input type="text" id="tDesig" required placeholder="e.g. PGT - Chemistry" class="w-full text-xs px-3 py-2 rounded-lg border focus:outline-none focus:border-brand-blue" />
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-600 mb-1">Subject & Degree *</label>
+                  <input type="text" id="tSub" required placeholder="e.g. M.Sc., B.Ed. (Chemistry)" class="w-full text-xs px-3 py-2 rounded-lg border focus:outline-none focus:border-brand-blue" />
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <button type="submit" class="px-4 py-2 bg-brand-blue hover:bg-blue-800 text-white font-bold rounded-lg text-xs transition">
+                  <i class="fa-solid fa-check mr-1"></i> Add Faculty Member
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Section 3: Upload Photo to Gallery -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h4 class="font-bold text-brand-navy text-sm mb-3 flex items-center">
+              <i class="fa-solid fa-images text-amber-600 mr-2"></i> Upload Photo to School Gallery
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="sm:col-span-2">
+                <label class="block text-[11px] font-bold text-slate-600 mb-1">Photo Caption / Event Title</label>
+                <input type="text" id="photoCaption" placeholder="e.g. Science Fair Project Presentation 2025" class="w-full text-xs px-3 py-2 rounded-lg border" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold text-slate-600 mb-1">Category</label>
+                <select id="photoCat" class="w-full text-xs px-3 py-2 rounded-lg border">
+                  <option value="events">Events & Celebrations</option>
+                  <option value="sports">Sports & Games</option>
+                  <option value="lab">ICT & Labs</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-[11px] text-slate-400">Mock photo will be published to the live gallery grid.</span>
+              <button onclick="handlePhotoUpload()" type="button" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-lg text-xs transition">
+                <i class="fa-solid fa-cloud-arrow-up mr-1"></i> Upload Photo
+              </button>
+            </div>
+          </div>
+
+          <!-- Section 4: Principal / School Info Update Notification -->
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-600 flex items-center justify-between">
+            <div>
+              <span class="font-bold text-brand-navy">Current Headmaster:</span> श्री जितेंद्र कुमार पटेल (Headmaster)
+            </div>
+            <button onclick="alert('Notice: To update statutory school metadata or UDISE records, please submit verification form to District Education Officer (DEO).')" class="text-xs text-brand-blue font-bold hover:underline">
+              Request Change
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Admin Modal Footer -->
+      <div class="bg-slate-50 px-6 py-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500 shrink-0">
+        <span>Logged in as: UHS Siktia Administrator</span>
+        <button onclick="closeAdminModal()" class="px-3 py-1 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-lg font-bold">
+          Close Window
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 bg-brand-navy text-white px-5 py-3 rounded-2xl shadow-2xl border border-blue-400/40 text-xs sm:text-sm font-medium flex items-center space-x-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+    <span id="toastMsg">Operation completed successfully.</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Smooth Scroll Helper
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Mobile Navigation Drawer Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        menu.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+
+    // Academics Tabs Switching (Class 9, 10, 11, 12)
+    function switchClassTab(tabId) {
+      // Hide all academic contents
+      document.querySelectorAll('.academic-tab-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+      // Reset all buttons style
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-blue', 'text-white');
+        btn.classList.add('bg-slate-100', 'text-slate-600');
+      });
+
+      // Show targeted content
+      const targetContent = document.getElementById('content-' + tabId);
+      if (targetContent) targetContent.classList.remove('hidden');
+
+      // Highlight targeted button
+      const targetBtn = document.getElementById('tabBtn-' + tabId);
+      if (targetBtn) {
+        targetBtn.classList.remove('bg-slate-100', 'text-slate-600');
+        targetBtn.classList.add('bg-brand-blue', 'text-white');
+      }
+    }
+
+    // Stream Switching for Class 11 and Class 12
+    function switchStream(classPrefix, stream) {
+      // Reset buttons
+      document.querySelectorAll(`.stream-btn-${classPrefix}`).forEach(btn => {
+        btn.classList.remove('bg-brand-blue', 'text-white');
+        btn.classList.add('text-slate-700');
+      });
+
+      const selectedBtn = document.getElementById(`btn-${classPrefix}-${stream}`);
+      if (selectedBtn) {
+        selectedBtn.classList.add('bg-brand-blue', 'text-white');
+        selectedBtn.classList.remove('text-slate-700');
+      }
+
+      const titleEl = document.getElementById(`${classPrefix}-stream-title`);
+      const listEl = document.getElementById(`${classPrefix}-stream-subjects`);
+
+      const classNum = classPrefix === 'c11' ? 'Class 11' : 'Class 12';
+
+      if (stream === 'sci') {
+        titleEl.textContent = `${classNum} - Science Stream (I.Sc)`;
+        listEl.innerHTML = `
+          <p class="p-2 bg-white rounded border"><strong>Physics:</strong> Core Principles, Experiments & Lab Viva</p>
+          <p class="p-2 bg-white rounded border"><strong>Chemistry:</strong> Organic, Inorganic & Chemical Formulations</p>
+          <p class="p-2 bg-white rounded border"><strong>Maths / Biology:</strong> Advanced Calculus OR Human & Plant Physiology</p>
+          <p class="p-2 bg-white rounded border"><strong>Languages:</strong> Compulsory Hindi & English</p>
+        `;
+      } else if (stream === 'arts') {
+        titleEl.textContent = `${classNum} - Arts Stream (I.A)`;
+        listEl.innerHTML = `
+          <p class="p-2 bg-white rounded border"><strong>History:</strong> Ancient, Medieval & Modern Indian Freedom Movement</p>
+          <p class="p-2 bg-white rounded border"><strong>Political Science:</strong> Indian Constitution & Global Politics</p>
+          <p class="p-2 bg-white rounded border"><strong>Geography / Economics:</strong> Physical Landscape & Indian Economic Policies</p>
+          <p class="p-2 bg-white rounded border"><strong>Languages:</strong> Hindi Literature, English / Sanskrit / Urdu</p>
+        `;
+      } else if (stream === 'comm') {
+        titleEl.textContent = `${classNum} - Commerce Stream (I.Com)`;
+        listEl.innerHTML = `
+          <p class="p-2 bg-white rounded border"><strong>Accountancy:</strong> Double Entry, Partnership & Balance Sheet Analysis</p>
+          <p class="p-2 bg-white rounded border"><strong>Business Studies:</strong> Management Principles & Enterprise Growth</p>
+          <p class="p-2 bg-white rounded border"><strong>Economics / Entrepreneurship:</strong> Micro & Macro Economics, New Ventures</p>
+          <p class="p-2 bg-white rounded border"><strong>Languages:</strong> Commercial English & Hindi</p>
+        `;
+      }
+    }
+
+    // Filter Notices
+    function filterNotices(cat) {
+      document.querySelectorAll('.notice-filter-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-navy', 'text-white');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      event.target.classList.remove('bg-slate-100', 'text-slate-700');
+      event.target.classList.add('bg-brand-navy', 'text-white');
+
+      const items = document.querySelectorAll('.notice-item');
+      items.forEach(item => {
+        if (cat === 'all' || item.getAttribute('data-category') === cat) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    // Gallery Filter
+    function filterGallery(cat) {
+      document.querySelectorAll('.gal-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-navy', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700');
+      });
+      event.target.classList.remove('bg-white', 'text-slate-700');
+      event.target.classList.add('bg-brand-navy', 'text-white');
+
+      const items = document.querySelectorAll('.gal-item');
+      items.forEach(item => {
+        if (cat === 'all' || item.getAttribute('data-category') === cat) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    // Lightbox modal functions
+    function openLightbox(src, caption) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImage');
+      const cap = document.getElementById('lightboxCaption');
+      img.src = src;
+      cap.textContent = caption;
+      modal.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.add('hidden');
+    }
+
+    // Admin Modal Open / Close
+    function openAdminModal() {
+      document.getElementById('adminModal').classList.remove('hidden');
+    }
+
+    function closeAdminModal() {
+      document.getElementById('adminModal').classList.add('hidden');
+    }
+
+    // Admin Simple Login
+    function loginAdmin() {
+      const pin = document.getElementById('adminPin').value;
+      if (pin === 'admin123' || pin === 'admin') {
+        document.getElementById('adminAuthScreen').classList.add('hidden');
+        document.getElementById('adminDashboardPanel').classList.remove('hidden');
+        showToast('Authorized: Welcome Headmaster / Administrator Desk', 'success');
+      } else {
+        alert('Invalid PIN! Please use "admin123" to access administrative controls.');
+      }
+    }
+
+    // Dynamic Notice Addition from Admin
+    function handleAddNewNotice(e) {
+      e.preventDefault();
+      const title = document.getElementById('newNoticeTitle').value;
+      const cat = document.getElementById('newNoticeCat').value;
+      const desc = document.getElementById('newNoticeDesc').value;
+
+      const noticeList = document.getElementById('noticeList');
+      const newDiv = document.createElement('div');
+      newDiv.className = `notice-item bg-emerald-50/70 hover:bg-emerald-100/50 p-4 md:p-5 rounded-2xl border border-emerald-300 transition flex flex-col md:flex-row md:items-center justify-between gap-4`;
+      newDiv.setAttribute('data-category', cat);
+
+      newDiv.innerHTML = `
+        <div class="flex items-start space-x-3.5">
+          <div class="w-12 h-12 rounded-xl bg-brand-green text-white flex flex-col items-center justify-center shrink-0">
+            <span class="text-xs font-bold uppercase leading-tight">NEW</span>
+            <span class="text-base font-extrabold leading-none">TODAY</span>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-200 text-emerald-900">${cat.toUpperCase()}</span>
+              <span class="text-xs text-slate-500">Just Published by Administration</span>
+            </div>
+            <h4 class="text-base font-bold text-slate-900 mt-1">${title}</h4>
+            <p class="text-xs text-slate-600 mt-0.5">${desc}</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3 shrink-0 self-end md:self-center">
+          <button onclick="simulatePdfDownload('${title.replace(/\s+/g, '_')}.pdf')" class="px-3 py-1.5 bg-white border border-slate-300 hover:border-brand-blue text-brand-blue text-xs font-bold rounded-lg shadow-sm flex items-center transition">
+            <i class="fa-solid fa-file-pdf text-red-500 mr-1.5 text-sm"></i> Download PDF
+          </button>
+        </div>
+      `;
+
+      noticeList.prepend(newDiv);
+      showToast(`Notice Published: "${title.slice(0, 25)}..."`, 'success');
+      e.target.reset();
+      scrollToSection('notices');
+    }
+
+    // Dynamic Teacher Addition from Admin
+    function handleAddNewTeacher(e) {
+      e.preventDefault();
+      const name = document.getElementById('tName').value;
+      const desig = document.getElementById('tDesig').value;
+      const sub = document.getElementById('tSub').value;
+
+      const grid = document.getElementById('teachersGrid');
+      const card = document.createElement('div');
+      card.className = "bg-white rounded-2xl overflow-hidden shadow-sm border border-emerald-200 hover:-translate-y-1 hover:shadow-md transition-all duration-300";
+      card.innerHTML = `
+        <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=500&q=80" alt="${name}" class="w-full h-full object-cover object-top" />
+          <span class="absolute top-3 right-3 bg-brand-green text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">New Faculty</span>
+        </div>
+        <div class="p-5">
+          <h4 class="font-bold text-brand-navy text-base">${name}</h4>
+          <p class="text-xs font-semibold text-brand-green mb-1">${desig}</p>
+          <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-book-bookmark mr-1 text-slate-400"></i> ${sub}</p>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>UHS Faculty</span>
+            <span class="text-emerald-700 font-semibold">Active</span>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+      showToast(`Teacher profile added: ${name}`, 'success');
+      e.target.reset();
+      scrollToSection('teachers');
+    }
+
+    // Mock Photo Upload to Gallery
+    function handlePhotoUpload() {
+      const caption = document.getElementById('photoCaption').value || 'New School Campus Activity';
+      const cat = document.getElementById('photoCat').value;
+
+      const galleryGrid = document.getElementById('galleryGrid');
+      const newPhoto = document.createElement('div');
+      newPhoto.className = `gal-item group relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-200 shadow-sm cursor-pointer border-2 border-emerald-400`;
+      newPhoto.setAttribute('data-category', cat);
+      newPhoto.onclick = () => openLightbox('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80', caption);
+      newPhoto.innerHTML = `
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="${caption}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+          <span class="text-white text-xs font-bold">${caption}</span>
+        </div>
+      `;
+      galleryGrid.prepend(newPhoto);
+      showToast('Photo uploaded successfully to school gallery!', 'success');
+      scrollToSection('gallery');
+    }
+
+    // Simulate PDF Download with feedback
+    function simulatePdfDownload(filename) {
+      showToast(`Downloading: ${filename} ...`, 'info');
+      setTimeout(() => {
+        showToast(`Downloaded successfully: ${filename}`, 'success');
+      }, 1000);
+    }
+
+    // Contact Form submission
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      showToast('Thank you! Your inquiry has been dispatched to Headmaster Office.', 'success');
+      e.target.reset();
+    }
+
+    // Reusable Toast Notification
+    function showToast(message, type = 'info') {
+      const toast = document.getElementById('toast');
+      const msg = document.getElementById('toastMsg');
+      const icon = document.getElementById('toastIcon');
+
+      msg.textContent = message;
+      if (type === 'success') {
+        icon.className = 'fa-solid fa-circle-check text-emerald-400 text-lg';
+      } else if (type === 'info') {
+        icon.className = 'fa-solid fa-circle-info text-cyan-400 text-lg';
+      } else {
+        icon.className = 'fa-solid fa-triangle-exclamation text-amber-400 text-lg';
+      }
+
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    // Close Lightbox on Outside Click or Esc
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeAdminModal();
+      }
+    });
+
+    document.getElementById('lightboxModal').addEventListener('click', (e) => {
+      if (e.target.id === 'lightboxModal') {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
